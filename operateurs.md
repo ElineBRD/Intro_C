@@ -43,3 +43,22 @@ Il effectue d'abord l'opération **AND** puis **inverse** le résultat.
 int a = 2; // 0010 en binaire
 int b = 7; // 0111 en binaire
 int result = ~(a & b); // a & b donne 0010 puis ~ inverse : 1101
+```
+
+### 5 - Complément binaire (**~**)
+
+**Inverse** les bits de l'opérande. Les bits 0 deviennent des 1 et les 1 deviennent des 0.
+
+```c
+int a = 5; // 0101 en binaire
+int result ~a; // Inverse les bits : 1010 (10 en décimal)
+```
+
+### 6 - Décalage à gauche (<<)
+
+Décale les bits sur la gauche par la valeur choisir en ajoutant des zéros sur la droite. Chaque "décalage" à gauche multiplie donc la valeur par 2.
+
+```c
+int a = 6; // 0110 en binaire
+int result = a << 1 ; // 1100 (12 en décimal)
+```
