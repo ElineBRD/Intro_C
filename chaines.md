@@ -19,7 +19,8 @@ char chaine [6]; // La chaîne est composée de 6 caractères en comptant le "0"
 ```
 | H | e | l | l | o | \ 0 |
 |--|--|--|--|--|--|
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| 0 | 1 | 2 | 3 | 4 | 5 |
+| 1 | 2 | 3 | 4 | 5 | 6 |
 
 ## 2 - Pointer, se déplacer dans la chaîne
 
@@ -30,8 +31,11 @@ char chaine [6]; // La chaîne est composée de 6 caractères en comptant le "0"
 ```
 - Pour se **déplacer** dans une chaîne de caractères afin d'en extraire des informations :
 ```c
-for(int i = 0 ; i < 10 ; i++) { // Tant que i < 10, je continue la boucle et je rajoute 1 à i. Le "i" permet de se déplacer dans une chaîne/liste
-        caractere = chaine[i]; // On initialise un "char" qui est une valeur légère pour contenir le code ASCII. "chaine[i] extrait le code ASCII et non une valeur car par de "&""
+for(int i = 0 ; i < 10 ; i++) {
+        caractere = chaine[i]; // "chaine[i] extrait le code ASCII et non une valeur car par de "&""
         printf("%d: caractere = %c \n code ASCII = %d.\n", i, caractere, caractere);
+        }
 ```
+
+Si on avait mit ```&chaine[i]``` à la place de juste ```chaine[i]```, on aurait extrait une valeur à la place du code ASCII.
 
