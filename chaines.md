@@ -1,6 +1,6 @@
 # Chaînes de caractères
 
-## 1 - **Qu'est ce qu'une chaînes de caractères ?**
+## 1 - **Qu'est ce qu'une chaîne de caractères ?**
 
 C'est du texte stocké sous forme de "liste/tableau". Une chaîne de caractères se termine toujours par le caractère "**0**".  
 Les chaînes de caractères sont des **pointeurs** par défaut, il n'est donc pas obligatoire de leur attribuer un "**&**" pour les stocker.
