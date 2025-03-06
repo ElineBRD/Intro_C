@@ -56,9 +56,14 @@ int result ~a; // Inverse les bits : 1010 (10 en décimal)
 
 ### 6 - Décalage à gauche (<<)
 
-Décale les bits sur la gauche par la valeur choisir en ajoutant des zéros sur la droite. Chaque "décalage" à gauche multiplie donc la valeur par 2.
+Décale les bits sur la gauche par la valeur choisie en ajoutant des zéros sur la droite. Chaque "décalage" à gauche multiplie donc la valeur par 2.
 
 ```c
 int a = 6; // 0110 en binaire
-int result = a << 1 ; // 1100 (12 en décimal)
+int result = a << 1 ; // 1100 (12 en décimal, le double)
 ```
+
+### 7 - Décalage à droite (>>)
+
+Décale les bits sur la droite par la valeur choisie.
+- Si le nombre est un entier **non signé** des zéros 

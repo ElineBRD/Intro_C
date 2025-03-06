@@ -1,4 +1,6 @@
-# 1 - Les structures
+# Partie 2
+
+## 1 - Les structures
 
 ## Utilisation
 
@@ -38,7 +40,7 @@ int ajouter_un(int nombre) {
 }
 ```
 
-# 2 - Les pointeurs
+## 2 - Les pointeurs
 
 ## Qu'est ce qu'un pointeur ?
 Les pointeurs vont permettre à une fonction de modifier des données. Il va permettre de **pointer** une autre variable
